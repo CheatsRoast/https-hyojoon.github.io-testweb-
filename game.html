@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>메인 페이지</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.menu button {
+    width: 120px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.game-btn {
+    font-family: monospace;
+    background-color: yellow;
+}
+
+.food-btn {
+    font-family: serif;
+    background-color: blue;
+    color: white;
+}
+
+.movie-btn {
+    font-family: fantasy;
+    background-color: brown;
+    color: white;
+}
+
+.name-btn {
+    background-color: lightgray;
+}
+
+.content {
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid black;
+    text-align: center;
+}
+
+span {
+    transition: font-size 5s;
+}
+
+span:hover {
+    font-size: 5000%;
+}
+</style>
+
+<script>
+function openGame() {
+    window.open("./game.html", "_blank");
+}
+
+function openFood() {
+    window.open("./food.html", "_blank");
+}
+
+function openMovie() {
+    window.open("./movie.html", "_blank");
+}
+
+function openName() {
+    window.open("./name.html", "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="menu">
+    <button class="game-btn" onclick="openGame()">게임</button>
+    <button class="food-btn" onclick="openFood()">음식</button>
+    <button class="movie-btn" onclick="openMovie()">영화</button>
+    <button class="name-btn" onclick="openName()">정효준</button>
+</div>
+
+<div class="content">
+
+    <h1 id="boardTitle">게임 리뷰</h1>
+    <hr>
+
+    <ul id="postList">
+        <li><a href="./gamelist/steller.html">스텔라 블레이드</a></li>
+        <li><a href="./gamelist/over.html">오버워치</a></li>
+        <li><a href="./gamelist/lip.html">피의 거짓</a></li>
+        <li><a href="./gamelist/acor.html">아머드코어</a></li>
+    </ul>
+
+</div>
+
+</body>
+</html>
