@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게임 리뷰</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:20px;
+}
+
+.menu button{
+    width:120px;
+    height:60px;
+    border-radius:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.game-btn{
+    background:yellow;
+    font-family:monospace;
+}
+
+.food-btn{
+    background:blue;
+    color:white;
+    font-family:serif;
+}
+
+.movie-btn{
+    background:brown;
+    color:white;
+    font-family:fantasy;
+}
+
+.name-btn{
+    background:lightgray;
+}
+
+.content{
+    width:80%;
+    height:500px;
+    margin:20px auto;
+    border:2px solid black;
+}
+
+.header{
+    height:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid gray;
+}
+
+.main{
+    display:flex;
+    height:410px;
+}
+
+.left{
+    width:50%;
+    padding:30px;
+    box-sizing:border-box;
+    text-align:left;
+}
+
+.right{
+    width:50%;
+    border-left:2px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+.image-box{
+    flex:4;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.buy-box{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.buy-btn{
+    width:220px;
+    height:60px;
+    font-size:24px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+function openGame() {
+    window.open("../game.html", "_blank");
+}
+
+function openFood() {
+    window.open("../food.html", "_blank");
+}
+
+function openMovie() {
+    window.open("../movie.html", "_blank");
+}
+
+function openName() {
+    window.open("../name.html", "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="menu">
+    <button class="game-btn" onclick="openGame()">게임</button>
+    <button class="food-btn" onclick="openFood()">음식</button>
+    <button class="movie-btn" onclick="openMovie()">영화</button>
+    <button class="name-btn" onclick="openName()">정효준</button>
+</div>
+
+<div class="content">
+
+    <div class="header">
+        <h1>인터스텔라 리뷰</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+
+            <h2>인터스텔라 설명</h2>
+
+            <p>
+인터스텔라는 크리스토퍼 놀란 감독이 2014년에 발표한 SF 영화입니다. 이 영화는 지구의 환경이 악화되어 인류가 멸망 위기에 처한 미래를 배경으로 합니다. 주인공 쿠퍼는 전직 NASA 파일럿으로, 인류의 생존을 위해 우주로 떠나는 임무에 참여하게 됩니다. 그는 다른 행성에서 새로운 거주지를 찾기 위해 우주 여행을 떠나게 되며, 그 과정에서 시간과 공간의 개념이 뒤틀리는 현상을 경험하게 됩니다. 인터스텔라는 과학적 사실과 인간의 감정을 조화롭게 담아내며, 시각적으로도 뛰어난 작품으로 평가받고 있습니다.
+            </p>
+
+        </div>
+
+        <div class="right">
+
+            <div class="image-box">
+                <img src="../imga/inters.webp" alt="인터스텔라 VI">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

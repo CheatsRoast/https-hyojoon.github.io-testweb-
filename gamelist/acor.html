@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게임 리뷰</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:20px;
+}
+
+.menu button{
+    width:120px;
+    height:60px;
+    border-radius:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.game-btn{
+    background:yellow;
+    font-family:monospace;
+}
+
+.food-btn{
+    background:blue;
+    color:white;
+    font-family:serif;
+}
+
+.movie-btn{
+    background:brown;
+    color:white;
+    font-family:fantasy;
+}
+
+.name-btn{
+    background:lightgray;
+}
+
+.content{
+    width:80%;
+    height:500px;
+    margin:20px auto;
+    border:2px solid black;
+}
+
+.header{
+    height:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid gray;
+}
+
+.main{
+    display:flex;
+    height:410px;
+}
+
+.left{
+    width:50%;
+    padding:30px;
+    box-sizing:border-box;
+    text-align:left;
+}
+
+.right{
+    width:50%;
+    border-left:2px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+.image-box{
+    flex:4;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.buy-box{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.buy-btn{
+    width:220px;
+    height:60px;
+    font-size:24px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+function openGame() {
+    window.open("../game.html", "_blank");
+}
+
+function openFood() {
+    window.open("../food.html", "_blank");
+}
+
+function openMovie() {
+    window.open("../movie.html", "_blank");
+}
+
+function openName() {
+    window.open("../name.html", "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="menu">
+    <button class="game-btn" onclick="openGame()">게임</button>
+    <button class="food-btn" onclick="openFood()">음식</button>
+    <button class="movie-btn" onclick="openMovie()">영화</button>
+    <button class="name-btn" onclick="openName()">정효준</button>
+</div>
+
+<div class="content">
+
+    <div class="header">
+        <h1>게임 리뷰</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+
+            <h2>게임 설명</h2>
+
+            <p>
+                아머드 코어 VI는 프롬소프트웨어가 개발한
+                메카 액션 게임이다.
+            </p>
+
+            <p>
+                플레이어는 다양한 파츠를 조합하여
+                자신만의 AC를 제작하고 전투를 진행한다.
+            </p>
+
+            <p>
+                빠른 기동성과 화려한 보스전이 특징이다.
+            </p>
+
+        </div>
+
+        <div class="right">
+
+            <div class="image-box">
+                <img src="../imga/acr.avif" alt="아머드 코어 VI">
+
+            </div>
+
+            <div class="buy-box">
+
+                <button
+                    class="buy-btn"
+                    onclick="window.open('https://store.steampowered.com/app/1888160/__VI/','_blank')">
+
+                    구매 링크
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

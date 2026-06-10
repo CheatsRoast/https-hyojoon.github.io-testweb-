@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게임 리뷰</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:20px;
+}
+
+.menu button{
+    width:120px;
+    height:60px;
+    border-radius:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.game-btn{
+    background:yellow;
+    font-family:monospace;
+}
+
+.food-btn{
+    background:blue;
+    color:white;
+    font-family:serif;
+}
+
+.movie-btn{
+    background:brown;
+    color:white;
+    font-family:fantasy;
+}
+
+.name-btn{
+    background:lightgray;
+}
+
+.content{
+    width:80%;
+    height:500px;
+    margin:20px auto;
+    border:2px solid black;
+}
+
+.header{
+    height:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid gray;
+}
+
+.main{
+    display:flex;
+    height:410px;
+}
+
+.left{
+    width:50%;
+    padding:30px;
+    box-sizing:border-box;
+    text-align:left;
+}
+
+.right{
+    width:50%;
+    border-left:2px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+.image-box{
+    flex:4;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.buy-box{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.buy-btn{
+    width:220px;
+    height:60px;
+    font-size:24px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+function openGame() {
+    window.open("../game.html", "_blank");
+}
+
+function openFood() {
+    window.open("../food.html", "_blank");
+}
+
+function openMovie() {
+    window.open("../movie.html", "_blank");
+}
+
+function openName() {
+    window.open("../name.html", "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="menu">
+    <button class="game-btn" onclick="openGame()">게임</button>
+    <button class="food-btn" onclick="openFood()">음식</button>
+    <button class="movie-btn" onclick="openMovie()">영화</button>
+    <button class="name-btn" onclick="openName()">정효준</button>
+</div>
+
+<div class="content">
+
+    <div class="header">
+        <h1>너의 이름은 리뷰</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+
+            <h2>너의 이름은 설명</h2>
+
+            <p>
+                너의 이름은는 2016년에 개봉한 일본 애니메이션 영화로, 사랑과 희망, 그리고 소멸에 대한 메시지를 담고 있다.
+            </p>
+            <p>
+                이 영화는 두 명의 주인공 시간을 넘나드는 사이의 로맨스를 중심으로 전개된다.
+            </p>
+            <p>
+                영화는 아름다운 애니메이션과 감동적인 스토리로 많은 관객들에게 사랑받았으며, 일본뿐만 아니라 전 세계적으로 큰 인기를 끌었다.
+            </p>
+
+
+        </div>
+
+        <div class="right">
+
+            <div class="image-box">
+                <img src="../imga/yourmane.webp" alt="너의 이름은 VI">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게임 리뷰</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:20px;
+}
+
+.menu button{
+    width:120px;
+    height:60px;
+    border-radius:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.game-btn{
+    background:yellow;
+    font-family:monospace;
+}
+
+.food-btn{
+    background:blue;
+    color:white;
+    font-family:serif;
+}
+
+.movie-btn{
+    background:brown;
+    color:white;
+    font-family:fantasy;
+}
+
+.name-btn{
+    background:lightgray;
+}
+
+.content{
+    width:80%;
+    height:500px;
+    margin:20px auto;
+    border:2px solid black;
+}
+
+.header{
+    height:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid gray;
+}
+
+.main{
+    display:flex;
+    height:410px;
+}
+
+.left{
+    width:50%;
+    padding:30px;
+    box-sizing:border-box;
+    text-align:left;
+}
+
+.right{
+    width:50%;
+    border-left:2px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+.image-box{
+    flex:4;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.buy-box{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.buy-btn{
+    width:220px;
+    height:60px;
+    font-size:24px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+function openGame() {
+    window.open("../game.html", "_blank");
+}
+
+function openFood() {
+    window.open("../food.html", "_blank");
+}
+
+function openMovie() {
+    window.open("../movie.html", "_blank");
+}
+
+function openName() {
+    window.open("../name.html", "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="menu">
+    <button class="game-btn" onclick="openGame()">게임</button>
+    <button class="food-btn" onclick="openFood()">음식</button>
+    <button class="movie-btn" onclick="openMovie()">영화</button>
+    <button class="name-btn" onclick="openName()">정효준</button>
+</div>
+
+<div class="content">
+
+    <div class="header">
+        <h1>배트맨 리뷰</h1>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+
+            <h2>배트맨 설명</h2>
+
+            <p>
+                배트맨은 DC 의 초자연적 영웅으로, 힘과 지능을 모두 갖춘 히어로이다.
+            </p>
+            <p>
+                배트맨은 고담 시의 범죄와 싸우며, 그의 상징적인 배트 수트를 입고 활동한다.
+            </p>
+            <p>
+                배트맨은 그의 기술과 전략을 활용하여 범죄자들을 물리치며, 정의를 수호한다.
+            </p>
+            <p>
+                이영화는 다크히어로와 철학적 매새지를 관객들에게 전달했다.
+            </p>
+
+
+        </div>
+
+        <div class="right">
+
+            <div class="image-box">
+                <img src="../imga/acr.avif" alt="아머드 코어 VI">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
